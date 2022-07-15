@@ -18,6 +18,7 @@
 
 .navbar-brand{
     font-weight: bold;
+    position: absolute;
 
 }
 
