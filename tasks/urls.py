@@ -11,4 +11,5 @@ urlpatterns = [
     path('edit/<int:id>', views.editTask, name="edit-task"),
     path('delete/<int:id>', views.deleteTask, name="delete-task"),
     path('yourname/<str:name>', views.yourName, name='your-name'),
+    path('about', views.about, name='about')
 ]

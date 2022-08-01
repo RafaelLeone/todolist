@@ -97,4 +97,7 @@ def helloWorld(request):
 @login_required
 def yourName(request, name):
     return render(request, 'tasks/yourname.html', {'name':name})
+
+def about(request):
+    return render(request, 'about.html')
     
