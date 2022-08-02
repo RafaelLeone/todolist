@@ -36,8 +36,13 @@ html {
 /* dashboard */
 .dashboard {
   padding: 0;
-  width: 100%;
-  display: block;
+  margin: auto;
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .dashboard h4 {
@@ -51,12 +56,11 @@ html {
 }
 
 .dashboard-box {
-  float: left;
   background-color: #dfdfdf;
   color: #fff;
   padding: 20px;
   box-sizing: border-box;
-  height: 130px;
+  height: 150px;
   width: 32%;
   text-align: center;
 }
@@ -228,4 +232,8 @@ ul.messages li {
 .change-form-p {
   margin-top: 30px;
   text-align: center;
+}
+
+.size {
+  height: 60px;
 }
