@@ -14,7 +14,6 @@ html {
 /* Navbar */
 
 .navbar {
-  border-bottom: 1px solid #333;
   width: 100vw;
   height: 60px;
   display: flex;
@@ -70,18 +69,6 @@ html {
   margin-right: 1.5%;
 }
 
-#dashboard-lastdays {
-  background-color: #3476e2;
-}
-
-#dashboard-done {
-  background-color: #13c43f;
-}
-
-#dashboard-doing {
-  background-color: #db1e47;
-}
-
 /* Botão de adicionar */
 
 #add-link {
@@ -89,7 +76,7 @@ html {
 }
 
 .add-div {
-  background-color: #3476e2;
+  background-color: #007bff;
   cursor: pointer;
   display: inline-block;
   color: #fff;
@@ -185,9 +172,8 @@ html {
 
 /* Rodapé */
 footer {
-  background-color: #333;
-  height: 300px;
-  border-top: 2px solid #202020;
+  background-color: #343a40;
+  height: 250px;
 }
 
 footer p {
@@ -227,6 +213,7 @@ ul.messages li {
 
 .auth-card {
   margin-bottom: 30px;
+  border-radius: 20px;
 }
 
 .change-form-p {

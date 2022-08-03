@@ -5,18 +5,18 @@
 {% block content %}
 <div class="offset-1 col-10 list-div">
     <br>
-    <h1 class="text-info text-center">Lista de tarefas:</h1>
+    <h1 class="text-center text-light">Lista de tarefas:</h1>
     <br>
     <div class="container dashboard">
-        <div class="col-4 dashboard-box" id="dashboard-lastdays">
+        <div class="col-4 dashboard-box bg-primary">
             <h4>Finalizadas nos últimos 30 dias</h4>
             <span>{{ tasksrecently }}</span>
         </div>
-        <div class="col-4 dashboard-box" id="dashboard-done">
+        <div class="col-4 dashboard-box bg-success">
             <h4>Tarefas finalizadas</h4>
             <span>{{ tasksdone }}</span>
         </div>
-        <div class="col-4 dashboard-box" id="dashboard-doing">
+        <div class="col-4 dashboard-box bg-danger">
             <h4>Tarefas para fazer</h4>
             <span>{{ tasksdoing }}</span>
         </div>
@@ -33,7 +33,7 @@
         </form>
     </div>
     <div class="col-12 filter-div">
-        <span>Filtrar por:</span>
+        <span class="text-light">Filtrar por:</span>
         <select name="filter" id="filter" class="form-control">
             <option value="">Escolha uma opção...</option>
             <option value="done">Tarefas concluídas</option>
@@ -54,7 +54,7 @@
         {% else %}
             <li class="task-item done">
         {% endif %}
-                <span><a href="/task/{{task.id}}">{{task.title}}</a></span>
+                <span><a class="text-light" href="/task/{{task.id}}">{{task.title}}</a></span>
                 <a href="delete/{{task.id}}" class="delete-btn"><span><i class="fas fa-trash"></i></span></a>
                 <a href="edit/{{task.id}}"><span><i class="fas fa-edit"></i></span></a>
                 <a href="changestatus/{{task.id}}"><i class="fas fa-check"></i></a>
@@ -62,7 +62,7 @@
         {% endfor %}
     </ul>
     <div class="pagination">
-        <span class="step-links">
+        <span class="step-links blockquote text-light">
             {% if tasks.has_previous %}
                 <a href="?page={{ tasks.previous_page_number }}"><i class="fas fa-arrow-left"></i></a>
             {% endif %}
