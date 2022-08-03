@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-    var baseUrl   = 'http://localhost:8000/';
+    var baseUrl   = 'https://todolistgrupo12.herokuapp.com/';
     var deleteBtn = $('.delete-btn');
     var searchBtn = $('#search-btn');
     var searchForm = $('#search-form');
