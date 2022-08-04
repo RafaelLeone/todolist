@@ -1,4 +1,7 @@
-# todolist
+# ToDo list
+
+To-do list website made with django during the Busertech project for academic purposes
+
 Preview:
 
 https://todolistgrupo12.herokuapp.com/
